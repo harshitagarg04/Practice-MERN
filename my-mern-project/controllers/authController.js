@@ -8,7 +8,7 @@ const JWT_SECRET = process.env.JWT_SECRET || 'your_jwt_secret';
 // Signup Controller
 exports.signup = async (req, res) => {
     const { name, phone, email, address, age, gender, password, confirmPassword } = req.body;
-
+//checking how to commit
     // Validate password and confirm password
     if (password !== confirmPassword) {
         return res.status(400).json({ message: "Password and Confirm Password must match." });
@@ -62,3 +62,5 @@ exports.login = async (req, res) => {
     }
 };
 
+
+//hvcbbcbvcxg
